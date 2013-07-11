@@ -100,7 +100,7 @@ var generator = function(args) {
     }
 
     if (args.json  ) {
-        string = JSON.stringify({ vinoipsum: string })
+        string = { vinoipsum: string };
     }
 
 
