@@ -30,6 +30,23 @@ Description of the arguments.
     <th>Description</th>
   </tr>
   <tr>
+    <td>-s</td>
+    <td>Generate a sentance</td>
+  </tr>
+  <tr>
+    <td>-p</td>
+    <td>Generate a paragraph of vino ipum</td>
+  </tr>
+  <tr>
+    <td>--count</td>
+    <td>Specifies the number of (sentance or paragraph) to generate. <i>Defaults to 1</i></td>
+  </tr>  
+  
+  <tr>
+    <td>--html</td>
+    <td>Wrap the output in HTML tags</td>
+  </tr>  
+  <tr>
     <td>--copy</td>
     <td><strong>Copy</strong> the output to the system clipboard</td>
   </tr>

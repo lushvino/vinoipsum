@@ -16,19 +16,13 @@ var vinoipsum = '';
     var count        = options.count || 1;
     var format       = options.count || 'text';
 
-
-
-options.units  = arguments.units || 'sentences';
-options.count  = arguments.count || 1;
-options.copy   = arguments.copy ? true : false;
-options.format = arguments.format || 'plain';
-
 // Generate the lorem ipsum text and print it out.
-loremIpsum = generator({ count: 0, format: "paragraphs"});
+loremIpsum = generator(arguments);
+
 console.log(loremIpsum);
 
 // Copy the lorem ipsum text to the clipboard.
-if (options.copy) {
+if (arguments.copy) {
   clipboard(loremIpsum, function(err) { err ? process.exit(1) : process.exit() });
 } else {
   process.exit(); // Successful exit.

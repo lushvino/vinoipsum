@@ -1,16 +1,12 @@
-var generator = function(options) {
+var generator = function(args) {
 
-    var sentanceMin  = options.sentanceMinimum || 4;
-    var sentanceMax  = options.sentanceMaximum || 11;
-    var paragraphMin = options.paragraphMinimum || 3;
-    var paragraphMax = options.paragraphMaximum || 7;
-    var count        = options.count || 1;
-    var format       = options.count || 'text';
-    var units        = options.units || 'sentences'
-
+    var sentance_min  =  4;
+    var sentance_max  =  11;
+    var paragraph_min =  3;
+    var paragraph_max =  7;
+    var count         = args.count || 1;
 
     var dictionary = require('./data/dictionary.js')
-
 
     var randomNumber = function(min, max) {
         return Math.floor(Math.random() * (max - min + 1) + min);
@@ -40,7 +36,7 @@ var generator = function(options) {
 
     };
 
-    var randomParagraph = function(words, min, max, sentence_min, sentence_max) {
+    var generateRandomParagraph = function(words, min, max, sentence_min, sentence_max) {
         var paragraph = '';
         var para_min = 0;
         var para_max = randomNumber(min,max);
@@ -60,29 +56,31 @@ var generator = function(options) {
 
 
     var iter = 0
-    var bounds = {min: 0, max: count};
+    var min = 0;
+    var max = count;
     var string = '';
     var prefix = '';
     var suffix = "\r\n";
 
-    if (format == 'html') {
+    if (args.html) {
       prefix = '<p>';
       suffix = '</p>';
     }
 
-    while (bounds.min < bounds.max) {
-        switch (units.toLowerCase()) {
-          case 'words':
+    while (min < max) {
+
+        if (args.w || args.word) {
             string += ' ' + randomDictionaryWord(dictionary.words);
-            break;
-          case 'sentences':
-            string += '. ' + generateRandomSentence(dictionary.words, sentanceMin, sentanceMax);
-            break;
-          case 'paragraphs':
-            string += prefix + generateRandomParagraph(dictionarywords, paragraphMin, paragraphMax, sentanceMin, sentanceMax) + suffix;
-            break;
         }
-        bounds.min = bounds.min + 1;
+
+        if (args.s || args.sentence) {
+            string += '. ' + generateRandomSentence(dictionary.words, sentance_min, sentance_max);
+        }
+
+        if (args.p || args.paragraph) {
+            string += prefix + generateRandomParagraph(dictionary.words, paragraph_min, paragraph_max, sentance_min, sentance_max) + suffix;
+        }
+        min += 1;
     }
 
     if (string.length) {
@@ -96,7 +94,7 @@ var generator = function(options) {
 
         string = string.slice(pos);
 
-        if (units == 'sentences') {
+        if (args.s || args.sentence) {
           string = string + '.';
         }
     }
