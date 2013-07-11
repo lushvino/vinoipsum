@@ -8,13 +8,14 @@ var options    = {};
 var arguments  = optimist.argv;
 var vinoipsum = '';
 
- var sentanceMin  = options.sentanceMinimum || 4;
+var sentanceMin  = options.sentanceMinimum || 4;
 
-    var sentanceMax  = options.sentanceMaximum || 11;
-    var paragraphMin = options.paragraphMinimum || 3;
-    var paragraphMax = options.paragraphMaximum || 7;
-    var count        = options.count || 1;
-    var format       = options.count || 'text';
+var sentanceMax  = options.sentanceMaximum || 11;
+var paragraphMin = options.paragraphMinimum || 3;
+var paragraphMax = options.paragraphMaximum || 7;
+var count        = options.count || 1;
+var format       = options.count || 'text';
+
 
 // Generate the lorem ipsum text and print it out.
 loremIpsum = generator(arguments);

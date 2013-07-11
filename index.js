@@ -99,6 +99,11 @@ var generator = function(args) {
         }
     }
 
+    if (args.json  ) {
+        string = JSON.stringify({ vinoipsum: string })
+    }
+
+
     return string;
 
 };
