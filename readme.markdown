@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/lushvino/vinoipsum.png)](https://travis-ci.org/[intabulas]/[vinoipsum])
+[![Build Status](https://travis-ci.org/lushvino/vinoipsum.png?branch=master)](https://travis-ci.org/lushvino/vinoipsum)
 
 
 ### Vino Ipsum
