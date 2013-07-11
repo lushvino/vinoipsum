@@ -73,6 +73,11 @@ var generator = function(args) {
       suffix = '</p>';
     }
 
+    if (ags.json ) {
+        suffix = '';
+        prefix = '';
+    }
+
     while (min < max) {
 
         if (args.w || args.word) {
@@ -92,9 +97,9 @@ var generator = function(args) {
     if (string.length) {
         var pos = 0;
 
-        if (string.indexOf('. ') == 0) {
+        if (string.indexOf('. ') === 0) {
           pos = 2;
-        } else if (string.indexOf('.') == 0 || string.indexOf(' ') == 0) {
+        } else if (string.indexOf('.') === 0 || string.indexOf(' ') === 0) {
           pos = 1;
         }
 
