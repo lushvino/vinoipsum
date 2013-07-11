@@ -1,3 +1,6 @@
+[![Build Status](https://travis-ci.org/lushvino/vinoipsum.png)](https://travis-ci.org/[intabulas]/[vinoipsum])
+
+
 ### Vino Ipsum
 
 Vino Ipsum is a module/for the node.js platform that can generate passages of lorem ipsum text that is based around wine related words
