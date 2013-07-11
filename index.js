@@ -5,7 +5,7 @@ var generator = function(args) {
     var paragraph_min =  3;
     var paragraph_max =  7;
     var count         = args.count || 1;
-
+    var convert_utf8  = args.utf8 || true;
     var dictionary = require('./data/dictionary.js')
 
     var randomNumber = function(min, max) {
@@ -97,6 +97,10 @@ var generator = function(args) {
         if (args.s || args.sentence) {
           string = string + '.';
         }
+    }
+
+    if (convert_utf8) {
+        string = new Buffer(string).toString('utf-8');
     }
 
     if (args.json  ) {
