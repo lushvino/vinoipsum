@@ -5,6 +5,10 @@ Vino Ipsum is a module/for the node.js platform that can generate passages of lo
 This module was inspired and derived from the [node-lorem-ipsum](https://raw.github.com/knicklabs/node-lorem-ipsum) module fron [kicklabs](https://github.com/knicklabs)
 
 
+## Demo App
+
+See [Vino Ipsum API Server](http://ipsum.lushvino.com/about)
+
 ### Using the Binary
 
 Install the Vino Ipsum module globally so that you can access the binary from anywhere.
