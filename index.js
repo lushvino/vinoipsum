@@ -1,22 +1,27 @@
 var generator = function(args) {
 
     var sentance_min  =  4;
-    var sentance_max  =  11;
+    var sentance_max  =  15;
     var paragraph_min =  3;
     var paragraph_max =  7;
     var count         = args.count || 1;
     var convert_utf8  = args.utf8 || true;
-    var dictionary = require('./data/dictionary.js')
 
+    // Dictionary of Wine Terms and Filler words
+    var dictionary    = require('./data/dictionary.js')
+
+    // Generate Random Number
     var randomNumber = function(min, max) {
         return Math.floor(Math.random() * (max - min + 1) + min);
      };
 
+    // Grab a random work from the dictionary
     var randomDictionaryWord = function(words) {
         return dictionary.words[randomNumber(0, dictionary.words.length - 1)];
     };
 
 
+    // Generate a sentance
     var generateRandomSentence = function(words, min, max) {
         var sentence = '';
         var word_min = 0;
@@ -36,6 +41,7 @@ var generator = function(args) {
 
     };
 
+    // Generate a paragraph
     var generateRandomParagraph = function(words, min, max, sentence_min, sentence_max) {
         var paragraph = '';
         var para_min = 0;
