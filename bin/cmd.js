@@ -18,13 +18,13 @@ var format       = options.count || 'text';
 
 
 // Generate the lorem ipsum text and print it out.
-loremIpsum = generator(arguments);
+vinoipsum = generator(arguments);
 
-console.log(loremIpsum);
+console.log(vinoipsum);
 
 // Copy the lorem ipsum text to the clipboard.
 if (arguments.copy) {
-  clipboard(loremIpsum, function(err) { err ? process.exit(1) : process.exit() });
+  clipboard(vinoipsum, function(err) { err ? process.exit(1) : process.exit() });
 } else {
   process.exit(); // Successful exit.
 }
