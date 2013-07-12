@@ -16,7 +16,8 @@
         "lorem",
         "ipsum",
         "loremipsum",
-        "lsuhvino"
+        "lushvino",
+        "placeholder"
     ],
     "dependencies": {
         "optimist": "~0.5.1",
