@@ -1,6 +1,6 @@
 {
     "name": "vinoipsum",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "description": "wine based lorem ipsum generator",
     "main": "index.js",
     "bin": {
@@ -20,7 +20,7 @@
     ],
     "dependencies": {
         "optimist": "~0.5.1",
-        "blindipsum": "~0.0.1"
+        "blindipsum": "~0.0.2"
     },
     "devDependencies": {
         "tap": "~0.4.3"
