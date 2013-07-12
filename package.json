@@ -19,7 +19,8 @@
         "lsuhvino"
     ],
     "dependencies": {
-        "optimist": "~0.5.1"
+        "optimist": "~0.5.1",
+        "blindipsum": "~0.0.1"
     },
     "devDependencies": {
         "tap": "~0.4.3"
