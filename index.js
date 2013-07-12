@@ -73,7 +73,7 @@ var generator = function(args) {
       suffix = '</p>';
     }
 
-    if (ags.json ) {
+    if (args.json ) {
         suffix = '';
         prefix = '';
     }
