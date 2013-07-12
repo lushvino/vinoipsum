@@ -9,7 +9,7 @@ var generator = function(args) {
     var format        = 'plain';
     var unit          = 'paragraph';
 
-    if ( args.s || args.sentance) { unit = 'sentance'; }
+    if ( args.s || args.sentence) { unit = 'sentence'; }
     if ( args.w || args.word)     { unit = 'word';     }
 
     if ( args.html) { format = 'html'; }

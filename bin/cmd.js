@@ -8,9 +8,9 @@ var options    = {};
 var args       = optimist.argv;
 var vinoipsum  = '';
 
-var sentanceMin  = options.sentanceMinimum || 4;
+var sentenceMin  = options.sentenceMinimum || 4;
+var sentenceMax  = options.sentenceMaximum || 11;
 
-var sentanceMax  = options.sentanceMaximum || 11;
 var paragraphMin = options.paragraphMinimum || 3;
 var paragraphMax = options.paragraphMaximum || 7;
 var count        = options.count || 1;

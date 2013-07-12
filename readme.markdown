@@ -36,7 +36,7 @@ Description of the arguments.
   </tr>
   <tr>
     <td>-s</td>
-    <td>Generate a sentance</td>
+    <td>Generate a sentence</td>
   </tr>
   <tr>
     <td>-p</td>
@@ -44,7 +44,7 @@ Description of the arguments.
   </tr>
   <tr>
     <td>--count</td>
-    <td>Specifies the number of (sentance or paragraph) to generate. <i>Defaults to 1</i></td>
+    <td>Specifies the number of (sentence or paragraph) to generate. <i>Defaults to 1</i></td>
   </tr>  
   
   <tr>
