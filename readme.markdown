@@ -1,5 +1,6 @@
 [![Build Status](https://travis-ci.org/lushvino/vinoipsum.png?branch=master)](https://travis-ci.org/lushvino/vinoipsum)
 
+[![Dependency Status](https://david-dm.org/intabulas/vinoipsum.png)]()
 
 ### Vino Ipsum
 
