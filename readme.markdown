@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.org/lushvino/vinoipsum.png?branch=master)](https://travis-ci.org/lushvino/vinoipsum)
 
-[![Dependency Status](https://david-dm.org/intabulas/vinoipsum.png)]()
+[![Dependency Status](https://david-dm.org/lushvino/vinoipsum.png)]()
 
 ### Vino Ipsum
 
@@ -46,12 +46,12 @@ Description of the arguments.
   <tr>
     <td>--count</td>
     <td>Specifies the number of (sentence or paragraph) to generate. <i>Defaults to 1</i></td>
-  </tr>  
-  
+  </tr>
+
   <tr>
     <td>--html</td>
     <td>Wrap the output in HTML tags</td>
-  </tr>  
+  </tr>
   <tr>
     <td>--copy</td>
     <td><strong>Copy</strong> the output to the system clipboard</td>
