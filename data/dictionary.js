@@ -1,5 +1,4 @@
 var dictionary = {
-
     words: [
         "Cabernet",
         "Sauvignon",

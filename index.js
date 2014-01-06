@@ -1,5 +1,4 @@
 var blindipsum = require('blindipsum');
-
 var dict = require('./data/dictionary');
 
 var generator = function(args) {
@@ -9,11 +8,21 @@ var generator = function(args) {
     var format        = 'plain';
     var unit          = 'paragraph';
 
-    if ( args.s || args.sentence) { unit = 'sentence'; }
-    if ( args.w || args.word)     { unit = 'word';     }
+    if ( args.s || args.sentence) {
+        unit = 'sentence';
+    }
 
-    if ( args.html) { format = 'html'; }
-    if ( args.json) { format = 'json'; }
+    if ( args.w || args.word) {
+        unit = 'word';
+    }
+
+    if ( args.html) {
+        format = 'html';
+    }
+
+    if ( args.json) {
+        format = 'json';
+    }
 
     var ipsum = blindipsum( {
         count: count,
@@ -25,7 +34,6 @@ var generator = function(args) {
     ipsum.setDictionary(dict);
 
     return ipsum.generate();
-
 };
 
 module.exports = generator;
