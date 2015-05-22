@@ -1,6 +1,6 @@
 {
     "name": "vinoipsum",
-    "version": "0.0.6",
+    "version": "1.0.0",
     "description": "wine based lorem ipsum generator",
     "main": "index.js",
     "bin": {
@@ -21,10 +21,10 @@
     ],
     "dependencies": {
         "optimist": "~0.6.0",
-        "blindipsum": "~0.0.2"
+        "blindipsum": "~1.0.0"
     },
     "devDependencies": {
-        "tap": "~0.4.3"
+        "tap": "~1.1.0"
     },
     "author" : {
         "name" : "Mark Lussier",
